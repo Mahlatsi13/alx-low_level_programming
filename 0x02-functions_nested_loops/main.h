@@ -19,3 +19,11 @@ int _abs(int num);
 int _putchar(char c);
 
 #endif /* MAIN_H */
+
+#ifndef MAIN_H
+#define MAIN_H
+
+int _isalpha(int c);
+int _putchar(char c);
+
+#endif /* MAIN_H */
