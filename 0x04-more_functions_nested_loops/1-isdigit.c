@@ -1,12 +1,12 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
- * _isdigit - checks if a character is a digit (0 through 9)
- * @c: the character to be checked
- * Return: 1 if c is a digit, 0 otherwise
- */
+ * _isdigit - checks for a digit (0 through 9).
+ *  @c: input that is going to be checked
+ * Return: 1 if @c is a digit, otherwise 0
+**/
+
 int _isdigit(int c)
 {
-    return isdigit(c);
+	return (c >= '0' && c <= '9');
 }
