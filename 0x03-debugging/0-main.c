@@ -1,18 +1,17 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <stdio.h>
-#include "main.h"
 
-/**
- * main - Entry point
+/*
+ * File: main.h
  *
- * Return: Always 0
- */
-int main(void)
-{
-    int i;
+ * Desc: header file
+**/
 
-    i = 0;
-    positive_or_negative(i);
+void positive_or_negative(int i);
+int largest_number(int a, int b, int c);
+void print_remaining_days(int month, int day, int year);
+int convert_day(int month, int day);
 
-    return (0);
-}
-
+#endif /* MAIN_H */
