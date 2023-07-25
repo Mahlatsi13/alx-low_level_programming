@@ -1,11 +1,25 @@
-#include "main.h"
+#include "main"
 
 /**
- * reset_to_98 - updates the value of the variable
- * the pointer points to to 98
- * @n: pointer to the variable to update
+ * reset_to_98 - Updates the value of the integer pointed to by n to 98.
+ * @n: A pointer to an integer.
  */
 void reset_to_98(int *n)
 {
-	*n = 98;
+    if (n != NULL)
+    {
+        *n = 98;
+    }
 }
+
+int main()
+{
+    int num = 42;
+    printf("Before: %d\n", num);
+    
+    reset_to_98(&num);
+    printf("After: %d\n", num);
+    
+    return 0;
+}
+
